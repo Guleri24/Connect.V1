@@ -1,29 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
+<?import com.jfoenix.controls.JFXButton?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="495.0" prefWidth="700.0" style="-fx-background-color: #fffffff; -fx-background-radius: 10;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
-   <children>
-      <Label layoutX="126.0" layoutY="23.0" prefHeight="128.0" prefWidth="426.0" style="-fx-background-color: #fffffff;" text="Connect" textFill="#48b5a3">
-         <font>
-            <Font name="Verdana Bold Italic" size="73.0" />
-         </font>
-      </Label>
-      <Label layoutX="218.0" layoutY="116.0" prefHeight="97.0" prefWidth="535.0" text="connecting people with stories" textFill="#48bca9">
-         <font>
-            <Font name="Tall Films" size="62.0" />
-         </font>
-      </Label>
-      <Button contentDisplay="TOP" layoutX="142.0" layoutY="213.0" mnemonicParsing="false" prefHeight="258.0" prefWidth="378.0" style="-fx-background-color: #fffffff; -fx-background-radius: 10;" text="Welcome" textFill="#2f9e96" />
-      <ImageView fitHeight="213.0" fitWidth="400.0" layoutX="176.0" layoutY="236.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../Downloads/connect_discoverHI_overview.jpg" />
-         </image>
-      </ImageView>
-   </children>
-</AnchorPane>
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="731.0" style="-fx-background-color: #222222;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">   <center>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <center>
+            <ImageView fitHeight="145.0" fitWidth="216.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <Image url="@../Resource/ConnectLogo.jpg" />
+            </ImageView>
+         </center>
+         <top>
+            <AnchorPane fx:id="borderPane1" prefHeight="147.0" prefWidth="731.0" BorderPane.alignment="CENTER">
+               <Label fx:id="Connect" layoutX="251.0" layoutY="21.0" text="Connect" textFill="#636363">
+                  <font>
+                     <Font name="Liberation Serif" size="69.0" />
+                  </font>
+               </Label>
+               <Label layoutX="180.0" layoutY="113.0" prefHeight="54.0" prefWidth="406.0" text="Connecting people with stories" textFill="#bcb0b0">
+                  <font>
+                     <Font name="Liberation Serif" size="29.0" />
+                  </font>
+               </Label>
+            </AnchorPane>
+         </top>
+         <left>
+            <AnchorPane prefHeight="199.0" prefWidth="0.0" BorderPane.alignment="CENTER" />
+         </left>
+         <bottom>
+            <JFXButton fx:id="Continue" buttonType="RAISED" prefHeight="40.0" prefWidth="198.0" ripplerFill="blueviolet" style="-fx-background-color: #125486; -fx-background-radius: 10;" text="hello" textFill="#c9b5b5" BorderPane.alignment="CENTER" />
+         </bottom>
+      </BorderPane>
+   </center>
+</BorderPane>
