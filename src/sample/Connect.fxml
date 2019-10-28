@@ -2,6 +2,8 @@
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitMenuButton?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -17,23 +19,29 @@
          </center>
          <top>
             <AnchorPane fx:id="borderPane1" prefHeight="147.0" prefWidth="731.0" BorderPane.alignment="CENTER">
-               <Label fx:id="Connect" layoutX="251.0" layoutY="21.0" text="Connect" textFill="#636363">
+               <Label fx:id="Connect" layoutX="251.0" layoutY="44.0" text="Connect" textFill="#636363">
                   <font>
                      <Font name="Liberation Serif" size="69.0" />
                   </font>
                </Label>
-               <Label layoutX="180.0" layoutY="113.0" prefHeight="54.0" prefWidth="406.0" text="Connecting people with stories" textFill="#bcb0b0">
+               <Label layoutX="179.0" layoutY="140.0" prefHeight="54.0" prefWidth="406.0" text="Connecting people with stories" textFill="#bcb0b0">
                   <font>
                      <Font name="Liberation Serif" size="29.0" />
                   </font>
                </Label>
+               <SplitMenuButton layoutX="7.0" layoutY="7.0" mnemonicParsing="false" style="-fx-background-color: #782659; -fx-background-radius: 10;" text="About">
+                 <items>
+                   <MenuItem mnemonicParsing="false" style="-fx-background-color: #666666;" text="Connect" />
+                   <MenuItem mnemonicParsing="false" style="-fx-background-color: #999999;" text="Abhishek" />
+                 </items>
+               </SplitMenuButton>
             </AnchorPane>
          </top>
          <left>
             <AnchorPane prefHeight="199.0" prefWidth="0.0" BorderPane.alignment="CENTER" />
          </left>
          <bottom>
-            <JFXButton fx:id="Continue" buttonType="RAISED" prefHeight="40.0" prefWidth="198.0" ripplerFill="blueviolet" style="-fx-background-color: #125486; -fx-background-radius: 10;" text="hello" textFill="#c9b5b5" BorderPane.alignment="CENTER" />
+            <JFXButton fx:id="Continue" buttonType="RAISED" onAction="#setButton" prefHeight="40.0" prefWidth="198.0" ripplerFill="blueviolet" style="-fx-background-color: #125486; -fx-background-radius: 10;" text="hello" textFill="#c9b5b5" BorderPane.alignment="CENTER" />
          </bottom>
       </BorderPane>
    </center>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.web.WebView?>
+
+<VBox prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+    <MenuBar VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="Stories">
+          <items>
+            <MenuItem mnemonicParsing="false" text="1" />
+            <MenuItem mnemonicParsing="false" text="2" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="3" />
+            <MenuItem mnemonicParsing="false" text="4" />
+            <MenuItem mnemonicParsing="false" text="5" />
+            <MenuItem mnemonicParsing="false" text="6" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="7" />
+            <MenuItem mnemonicParsing="false" text="8" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="About">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
+          </items>
+        </Menu>
+            <Menu mnemonicParsing="false" text="Add">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Edit">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+              </items>
+            </Menu>
+      </menus>
+    </MenuBar>
+    <SplitPane dividerPositions="0.7271714922048997" focusTraversable="true" prefHeight="463.0" prefWidth="1009.0" VBox.vgrow="ALWAYS">
+         <items>
+            <WebView prefHeight="571.0" prefWidth="515.0" />
+            <AnchorPane prefHeight="571.0" prefWidth="266.0">
+               <children>
+                   <AnchorPane layoutX="52.0" layoutY="31.0" prefHeight="127.0" prefWidth="138.0">
+                       <ImageView fitHeight="127.0" fitWidth="169.0" pickOnBounds="true" preserveRatio="true"/>
+                   </AnchorPane>
+                  <WebView layoutX="-4.0" layoutY="218.0" prefHeight="344.0" prefWidth="241.0" />
+               </children>
+            </AnchorPane>
+         </items>
+    </SplitPane>
+  </children>
+</VBox>
