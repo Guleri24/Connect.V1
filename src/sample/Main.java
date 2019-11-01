@@ -1,56 +1,43 @@
 package sample;
 
 import javafx.application.Application;
-
-import javafx.event.EventHandler;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.layout.VBox;
-import javafx.scene.web.WebEngine;
-import javafx.scene.web.WebView;
+import javafx.scene.paint.Color;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
+
 import javafx.event.ActionEvent;
-
-
 
 public class Main extends Application {
 
+    @FXML
+    Button start;
     @Override
     public void start(Stage primaryStage) throws Exception{
-        primaryStage.setTitle("Connect");
-      /*  WebView webView = new WebView();
-        WebEngine engine = webView.getEngine();
-        Button button = new Button("load");
+       FXMLLoader firstLoader = new FXMLLoader(getClass().getResource("Choose.fxml"));
+       Parent firstPane = firstLoader.load();
+       Scene firstScene = new Scene(firstPane,600,400);
 
-        button.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent event) {
-                engine.load("https://www.google.com");
-            }
+       FXMLLoader secondLoader = new FXMLLoader(getClass().getResource("Choose.fxml"));
+       Parent secondPane  = secondLoader.load();
+       Scene secondScene = new Scene(secondPane,600,400);
+
+       Controller controller = (Controller)firstLoader.getController();
+       controller.setSecondScene(secondScene);
+
+       primaryStage.setTitle("Connect");
+       primaryStage.setScene(firstScene);
+       primaryStage.show();
+
+
+    }
+    public void onCLick(ActionEvent event){
+        start.setOnAction(e->{
         });
-
-        Button button1 = new Button("Execute javaScript");
-        button1.setOnAction(event -> {
-            engine.executeScript("window.location= \"https://www.youtube.com/\";");
-        });
-
-        Button button2 = new Button("Load Local");
-        button2.setOnAction(event -> {
-            engine.loadContent("<html><body><p>hello negi </p><h2>hello</h2></body></html>");
-        });
-
-        Button button3 = new Button("Reload");
-        button3.setOnAction(e->{
-        engine.getHistory();
-        engine.reload();
-        });
-        VBox root = new VBox();
-        root.getChildren().addAll(button,button1,button2,button3,webView);
-
-        //Parent root = FXMLLoader.load(getClass().getResource("Connect.fxml"));
-        Scene scene = new Scene(root);
-        primaryStage.setScene(scene);*/
-        primaryStage.show();
     }
 
 
