@@ -13,32 +13,32 @@
                 <Font name="Bitstream Vera Serif Bold" size="47.0" />
             </font>
         </Text>
-        <Button fx:id="Overcoming_the_monster" layoutX="87.0" layoutY="81.0" mnemonicParsing="false" onAction="#onClick" prefHeight="32.0" prefWidth="181.0" style="-fx-background-radius: 20; -fx-background-color: #fc7fb2;" text="Overcoming the monster">
+        <Button fx:id="Overcoming_the_monster" layoutX="87.0" layoutY="81.0" mnemonicParsing="false" onAction="#setOvercoming_the_monster" prefHeight="32.0" prefWidth="181.0" style="-fx-background-radius: 20; -fx-background-color: #fc7fb2;" text="Overcoming the monster" >
          <rotationAxis>
             <Point3D />
          </rotationAxis></Button>
-        <Button fx:id="Comedy" layoutX="364.0" layoutY="81.0" mnemonicParsing="false" onAction="#onClick" prefHeight="32.0" prefWidth="181.0" style="-fx-background-radius: 20; -fx-background-color: #fc7fb2;" text="Comedy">
+        <Button fx:id="Comedy" layoutX="364.0" layoutY="81.0" mnemonicParsing="false" onAction="#setComedy" prefHeight="32.0" prefWidth="181.0" style="-fx-background-radius: 20; -fx-background-color: #fc7fb2;" text="Comedy">
          <rotationAxis>
             <Point3D />
          </rotationAxis></Button>
-        <Button fx:id="Rags_to_Riches" layoutX="87.0" layoutY="140.0" mnemonicParsing="false" onAction="#onClick" prefHeight="32.0" prefWidth="181.0" style="-fx-background-radius: 20; -fx-background-color: #fc7fb2;" text="Rags to Riches">
+        <Button fx:id="Rags_to_Riches" layoutX="87.0" layoutY="140.0" mnemonicParsing="false" onAction="#setRags_to_Riches" prefHeight="32.0" prefWidth="181.0" style="-fx-background-radius: 20; -fx-background-color: #fc7fb2;" text="Rags to Riches">
          <rotationAxis>
             <Point3D />
          </rotationAxis></Button>
-        <Button fx:id="The_Quest" layoutX="87.0" layoutY="207.0" mnemonicParsing="false" onAction="#onClick" prefHeight="32.0" prefWidth="181.0" style="-fx-background-radius: 20; -fx-background-color: #fc7fb2;" text="The Quest">
+        <Button fx:id="The_Quest" layoutX="87.0" layoutY="207.0" mnemonicParsing="false" onAction="#setThe_Quest" prefHeight="32.0" prefWidth="181.0" style="-fx-background-radius: 20; -fx-background-color: #fc7fb2;" text="The Quest">
          <rotationAxis>
             <Point3D />
          </rotationAxis></Button>
-        <Button fx:id="Voyage_and_Return" layoutX="87.0" layoutY="269.0" mnemonicParsing="false" onAction="#onClick" prefHeight="32.0" prefWidth="181.0" style="-fx-background-radius: 20; -fx-background-color: #fc7fb2;" text="Voyage and Return">
+        <Button fx:id="Voyage_and_Return" layoutX="87.0" layoutY="269.0" mnemonicParsing="false" onAction="#setVoyage_and_Return" prefHeight="32.0" prefWidth="181.0" style="-fx-background-radius: 20; -fx-background-color: #fc7fb2;" text="Voyage and Return">
          <rotationAxis>
             <Point3D />
          </rotationAxis></Button>
-        <Button fx:id="Tragedy" layoutX="364.0" layoutY="140.0" mnemonicParsing="false" onAction="#onClick" prefHeight="32.0" prefWidth="181.0" style="-fx-background-radius: 20; -fx-background-color: #fc7fb2;" text="Tragedy" />
-        <Button fx:id="Rebirth" layoutX="364.0" layoutY="201.0" mnemonicParsing="false" onAction="#onClick" prefHeight="32.0" prefWidth="181.0" style="-fx-background-radius: 20; -fx-background-color: #fc7fb2;" text="Rebirth">
+        <Button fx:id="Tragedy" layoutX="364.0" layoutY="140.0" mnemonicParsing="false" onAction="#setTragedy" prefHeight="32.0" prefWidth="181.0" style="-fx-background-radius: 20; -fx-background-color: #fc7fb2;" text="Tragedy" />
+        <Button fx:id="Rebirth" layoutX="364.0" layoutY="201.0" mnemonicParsing="false" onAction="#setRebirth" prefHeight="32.0" prefWidth="181.0" style="-fx-background-radius: 20; -fx-background-color: #fc7fb2;" text="Rebirth">
          <rotationAxis>
             <Point3D />
          </rotationAxis></Button>
-        <Button fx:id="Blue" layoutX="364.0" layoutY="269.0" mnemonicParsing="false" onAction="#onClick" prefHeight="32.0" prefWidth="181.0" style="-fx-background-radius: 20; -fx-background-color: #fc7fb2;" text="Blue">
+        <Button fx:id="Blue" layoutX="364.0" layoutY="269.0" mnemonicParsing="false" onAction="#setBlue" prefHeight="32.0" prefWidth="181.0" style="-fx-background-radius: 20; -fx-background-color: #fc7fb2;" text="Blue">
          <rotationAxis>
             <Point3D />
          </rotationAxis></Button>

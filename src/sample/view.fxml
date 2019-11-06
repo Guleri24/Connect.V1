@@ -9,20 +9,25 @@
 <?import javafx.scene.web.WebView?>
 
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="529.0" prefWidth="868.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="529.0" prefWidth="868.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <bottom>
       <AnchorPane prefHeight="17.0" prefWidth="868.0" style="-fx-background-color: #ffd5d5;" BorderPane.alignment="CENTER" />
    </bottom>
    <center>
-      <WebView prefHeight="427.0" prefWidth="868.0" BorderPane.alignment="CENTER" />
+      <WebView fx:id="view" prefHeight="427.0" prefWidth="868.0" BorderPane.alignment="CENTER" />
    </center>
    <top>
       <HBox prefHeight="42.0" prefWidth="868.0" style="-fx-background-color: #ffd5d5;" BorderPane.alignment="CENTER">
          <children>
             <MenuButton mnemonicParsing="false" prefHeight="40.0" prefWidth="116.0" styleClass="button" stylesheets="@../Resource/Connect.css" text="Stories">
               <items>
-                <MenuItem mnemonicParsing="false" text="Action 1" />
-                <MenuItem mnemonicParsing="false" text="Action 2" />
+                <MenuItem mnemonicParsing="false" text="Overcoming the monster" onAction="#setOvercoming_the_monster"/>
+                <MenuItem mnemonicParsing="false" text="Comedy" onAction="#setComedy"/>
+                 <MenuItem mnemonicParsing="false" text="Rags to Riches" onAction="#setRags_to_Riches"/>
+                 <MenuItem mnemonicParsing="false" text="The Quest" onAction="#setThe_Quest" />
+                 <MenuItem mnemonicParsing="false" text="Voyage and Return" onAction="#setVoyage_and_Return"/>
+                 <MenuItem mnemonicParsing="false" text="Tragedy" onAction="#setTragedy"/>
+                 <MenuItem mnemonicParsing="false" text="Blue" onAction="#setBlue"/>
               </items>
             </MenuButton>
             <MenuButton layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="116.0" styleClass="button" stylesheets="@../Resource/Connect.css" text="Edit">
