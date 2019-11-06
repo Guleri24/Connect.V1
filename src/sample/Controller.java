@@ -1,63 +1,56 @@
 package sample;
 
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
-import javafx.stage.Stage;
+import javafx.scene.control.Dialog;
+import javafx.stage.Window;
 
-import java.io.IOException;
+import java.awt.*;
+import java.net.URL;
+import java.util.ResourceBundle;
 
-public class Controller {
-    private Scene secondScene;
-
-    public void setSecondScene(Scene scene) {
-        secondScene = scene;
-    }
-
-    public void openSecondScene(ActionEvent actionEvent) {
-        Stage primaryStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
-        primaryStage.setScene(secondScene);
-    }
-
+public class Controller implements Initializable {
+@FXML
+    public Button start;
+    public Button About;
     @FXML
-    Button Overcoming_the_monster, Rags_to_Riches, The_Quest, Voyage_and_Return, Comedy, Tragedy, Rebirth, Blue;
-
-    public void onClick(ActionEvent event) throws IOException {
-        Overcoming_the_monster.setOnAction(e -> {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("view.fxml"));
-            Parent pane;
-            try {
-             pane = loader.load();
-                Scene scene = new Scene(pane,1000,500);
-                setSecondScene(scene);
-            } catch (IOException ex) {
-                ex.printStackTrace();
-            }
-
-
-        });
-        Rags_to_Riches.setOnAction(e -> {
-            System.out.println("rags");
-        });
-        Rebirth.setOnAction(e -> {
-            System.out.println("Rebirth");
-        });
-        Comedy.setOnAction(e -> {
-            System.out.println("comedy");
-        });
-        Blue.setOnAction(e -> {
-            System.out.println("blue");
-        });
-        The_Quest.setOnAction(e -> {
-            System.out.println("qiest");
-        });
-
-
-    }
+private Main main;
+@Override
+    public void initialize(URL location, ResourceBundle resources){
 
 }
+@FXML
+ public void setStart(){
+    start.setOnAction(new EventHandler<ActionEvent>() {
+        @Override
+        public void handle(ActionEvent event) {
+            try {
+                Main.showChoose();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+    });
 
+}
+@FXML
+public void setAbout(ActionEvent event){
+    About.setOnAction(new EventHandler<ActionEvent>() {
+        @Override
+        public void handle(ActionEvent event) {
+            Dialog dialog = new Dialog();
+            dialog.setContentText("Hello this is Connect");
+            Window window = dialog.getDialogPane().getScene().getWindow();
+            window.setOnCloseRequest(e->window.hide());
+            dialog.showAndWait();
+        }
+    });
+}
+@FXML
+    public void onClick(ActionEvent event) {
+    System.out.println("Hello FX");
+    }
+}
