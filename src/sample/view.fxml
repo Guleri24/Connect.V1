@@ -9,35 +9,41 @@
 <?import javafx.scene.web.WebView?>
 
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="529.0" prefWidth="868.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<BorderPane  maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="529.0" prefWidth="868.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <bottom>
-      <AnchorPane prefHeight="17.0" prefWidth="868.0" style="-fx-background-color: #ffd5d5;" BorderPane.alignment="CENTER" />
+      <AnchorPane  prefHeight="17.0" prefWidth="868.0" style="-fx-background-color: #ffd5d5;" BorderPane.alignment="CENTER" />
    </bottom>
    <center>
-      <WebView fx:id="view" prefHeight="427.0" prefWidth="868.0" BorderPane.alignment="CENTER" />
+      <WebView fx:id="view" prefHeight="427.0" prefWidth="868.0" BorderPane.alignment="CENTER"  />
+
    </center>
    <top>
-      <HBox prefHeight="42.0" prefWidth="868.0" style="-fx-background-color: #ffd5d5;" BorderPane.alignment="CENTER">
-         <children>
-            <MenuButton mnemonicParsing="false" prefHeight="40.0" prefWidth="116.0" styleClass="button" stylesheets="@../Resource/Connect.css" text="Stories">
-              <items>
-                <MenuItem mnemonicParsing="false" text="Overcoming the monster" onAction="#setOvercoming_the_monster"/>
-                <MenuItem mnemonicParsing="false" text="Comedy" onAction="#setComedy"/>
-                 <MenuItem mnemonicParsing="false" text="Rags to Riches" onAction="#setRags_to_Riches"/>
-                 <MenuItem mnemonicParsing="false" text="The Quest" onAction="#setThe_Quest" />
-                 <MenuItem mnemonicParsing="false" text="Voyage and Return" onAction="#setVoyage_and_Return"/>
-                 <MenuItem mnemonicParsing="false" text="Tragedy" onAction="#setTragedy"/>
-                 <MenuItem mnemonicParsing="false" text="Blue" onAction="#setBlue"/>
-              </items>
-            </MenuButton>
-            <MenuButton layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="116.0" styleClass="button" stylesheets="@../Resource/Connect.css" text="Edit">
+       <HBox prefHeight="42.0" prefWidth="868.0" style="-fx-background-color: #ffd5d5;" BorderPane.alignment="CENTER">
+           <MenuButton mnemonicParsing="false" prefHeight="40.0" prefWidth="116.0" styleClass="button"
+                       stylesheets="@../Resource/Connect.css" text="Stories">
                <items>
-                  <MenuItem mnemonicParsing="false" text="Action 1" />
-                  <MenuItem mnemonicParsing="false" text="Action 2" />
+                   <MenuItem fx:id="View_Overcoming_monster" mnemonicParsing="false" text="Overcoming the monster"
+                             onAction="#setMenu"/>
+                   <MenuItem fx:id="View_Comedy" mnemonicParsing="false" text="Comedy" onAction="#setMenu"/>
+                   <MenuItem fx:id="View_Rags_Rags" mnemonicParsing="false" text="Rags to Riches" onAction="#setMenu"/>
+                   <MenuItem fx:id="View_Quest" mnemonicParsing="false" text="The Quest" onAction="#setMenu"/>
+                   <MenuItem fx:id="View_Voyage_Return" mnemonicParsing="false" text="Voyage and Return"
+                             onAction="#setMenu"/>
+                   <MenuItem fx:id="View_Rebirth" mnemonicParsing="false" text="Rebirth"
+                             onAction="#setMenu"/>
+                   <MenuItem fx:id="View_Tragedy" mnemonicParsing="false" text="Tragedy" onAction="#setMenu"/>
+                   <MenuItem fx:id="View_Blue" mnemonicParsing="false" text="Blue" onAction="#setMenu"/>
                </items>
-            </MenuButton>
-            <Button mnemonicParsing="false" prefHeight="41.0" prefWidth="101.0" stylesheets="@../Resource/Connect.css" text="About" />
-         </children>
-      </HBox>
+           </MenuButton>
+           <MenuButton layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="116.0"
+                       styleClass="button" stylesheets="@../Resource/Connect.css" text="Contribute">
+              <items>
+                  <MenuItem mnemonicParsing="false" text="Add"/>
+                  <MenuItem mnemonicParsing="false" text="Edit"/>
+              </items>
+           </MenuButton>
+           <Button mnemonicParsing="false" prefHeight="41.0" prefWidth="101.0" stylesheets="@../Resource/Connect.css"
+                   text="About"/>
+       </HBox>
    </top>
 </BorderPane>
