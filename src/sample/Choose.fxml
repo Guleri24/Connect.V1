@@ -8,40 +8,40 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ffd5d5; -fx-border-color: #000000;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
     <children>
-        <Text fill="#45454d" layoutX="213.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose">
+        <Text fill="#45454d" layoutX="213.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stories">
             <font>
                 <Font name="Bitstream Vera Serif Bold" size="47.0" />
             </font>
         </Text>
-        <Button fx:id="Overcoming_the_monster" layoutX="87.0" layoutY="81.0" mnemonicParsing="false" onAction="#setChoose" prefHeight="32.0" prefWidth="181.0" style="-fx-background-radius: 20; -fx-background-color: #fc7fb2;" text="Overcoming the monster" >
-         <rotationAxis>
-            <Point3D />
-         </rotationAxis></Button>
-        <Button fx:id="Comedy" layoutX="364.0" layoutY="81.0" mnemonicParsing="false" onAction="#setChoose" prefHeight="32.0" prefWidth="181.0" style="-fx-background-radius: 20; -fx-background-color: #fc7fb2;" text="Comedy">
-         <rotationAxis>
-            <Point3D />
-         </rotationAxis></Button>
-        <Button fx:id="Rags_to_Riches" layoutX="87.0" layoutY="140.0" mnemonicParsing="false" onAction="#setChoose" prefHeight="32.0" prefWidth="181.0" style="-fx-background-radius: 20; -fx-background-color: #fc7fb2;" text="Rags to Riches">
-         <rotationAxis>
-            <Point3D />
-         </rotationAxis></Button>
-        <Button fx:id="The_Quest" layoutX="87.0" layoutY="207.0" mnemonicParsing="false" onAction="#setChoose" prefHeight="32.0" prefWidth="181.0" style="-fx-background-radius: 20; -fx-background-color: #fc7fb2;" text="The Quest">
-         <rotationAxis>
-            <Point3D />
-         </rotationAxis></Button>
-        <Button fx:id="Voyage_and_Return" layoutX="87.0" layoutY="269.0" mnemonicParsing="false" onAction="#setChoose" prefHeight="32.0" prefWidth="181.0" style="-fx-background-radius: 20; -fx-background-color: #fc7fb2;" text="Voyage and Return">
-         <rotationAxis>
-            <Point3D />
-         </rotationAxis></Button>
-        <Button fx:id="Tragedy" layoutX="364.0" layoutY="140.0" mnemonicParsing="false" onAction="#setChoose" prefHeight="32.0" prefWidth="181.0" style="-fx-background-radius: 20; -fx-background-color: #fc7fb2;" text="Tragedy" />
-        <Button fx:id="Rebirth" layoutX="364.0" layoutY="201.0" mnemonicParsing="false" onAction="#setChoose" prefHeight="32.0" prefWidth="181.0" style="-fx-background-radius: 20; -fx-background-color: #fc7fb2;" text="Rebirth">
-         <rotationAxis>
-            <Point3D />
-         </rotationAxis></Button>
-        <Button fx:id="Blue" layoutX="364.0" layoutY="269.0" mnemonicParsing="false" onAction="#setChoose" prefHeight="32.0" prefWidth="181.0" style="-fx-background-radius: 20; -fx-background-color: #fc7fb2;" text="Blue">
-         <rotationAxis>
-            <Point3D />
-         </rotationAxis></Button>
+        <Button fx:id="Overcoming_the_monster" layoutX="32.0" layoutY="65.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="181.0" style="-fx-background-radius: 20; -fx-background-color: #fc7fb2;" text="Overcoming the monster">
+            <rotationAxis>
+                <Point3D />
+            </rotationAxis></Button>
+        <Button fx:id="Comedy" layoutX="385.0" layoutY="65.0" mnemonicParsing="false"  prefHeight="32.0" prefWidth="181.0" style="-fx-background-radius: 20; -fx-background-color: #fc7fb2;" text="Comedy">
+            <rotationAxis>
+                <Point3D />
+            </rotationAxis></Button>
+        <Button fx:id="Rags_to_Riches" layoutX="32.0" layoutY="108.0" mnemonicParsing="false"  prefHeight="32.0" prefWidth="181.0" style="-fx-background-radius: 20; -fx-background-color: #fc7fb2;" text="Rags to Riches">
+            <rotationAxis>
+                <Point3D />
+            </rotationAxis></Button>
+        <Button fx:id="The_Quest" layoutX="32.0" layoutY="149.0" mnemonicParsing="false"  prefHeight="32.0" prefWidth="181.0" style="-fx-background-radius: 20; -fx-background-color: #fc7fb2;" text="The Quest">
+            <rotationAxis>
+                <Point3D />
+            </rotationAxis></Button>
+        <Button fx:id="Voyage_and_Return" layoutX="32.0" layoutY="192.0" mnemonicParsing="false"  prefHeight="32.0" prefWidth="181.0" style="-fx-background-radius: 20; -fx-background-color: #fc7fb2;" text="Voyage and Return">
+            <rotationAxis>
+                <Point3D />
+            </rotationAxis></Button>
+        <Button fx:id="Tragedy" layoutX="385.0" layoutY="108.0" mnemonicParsing="false"  prefHeight="32.0" prefWidth="181.0" style="-fx-background-radius: 20; -fx-background-color: #fc7fb2;" text="Tragedy" />
+        <Button fx:id="Rebirth" layoutX="385.0" layoutY="149.0" mnemonicParsing="false"  prefHeight="32.0" prefWidth="181.0" style="-fx-background-radius: 20; -fx-background-color: #fc7fb2;" text="Rebirth">
+            <rotationAxis>
+                <Point3D />
+            </rotationAxis></Button>
+        <Button fx:id="Blue" layoutX="385.0" layoutY="192.0" mnemonicParsing="false"  prefHeight="32.0" prefWidth="181.0" style="-fx-background-radius: 20; -fx-background-color: #fc7fb2;" text="Blue">
+            <rotationAxis>
+                <Point3D />
+            </rotationAxis></Button>
         <AnchorPane layoutX="8.0" layoutY="309.0" prefHeight="69.0" prefWidth="600.0" style="-fx-background-color: #fff1e9;">
             <children>
                 <Text layoutX="14.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Connect" wrappingWidth="146.7294921875">
@@ -49,16 +49,17 @@
                         <Font name="System Bold Italic" size="33.0" />
                     </font>
                 </Text>
-                <Text layoutX="193.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Connecting prople with stories">
+                <Text layoutX="193.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Connecting people with stories">
                     <font>
                         <Font name="System Italic" size="13.0" />
                     </font>
                 </Text>
-                <Button layoutX="492.0" layoutY="28.0" mnemonicParsing="false" text="About" fx:id="About" onAction="#setAbout" />
+                <Button fx:id="About" layoutX="492.0" layoutY="28.0" mnemonicParsing="false" onAction="#setAbout" style="-fx-background-radius: 20; -fx-background-color: #fc7fb2;" text="About" />
             </children>
         </AnchorPane>
+      <Button fx:id="Start" layoutX="238.0" layoutY="246.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="115.0" onAction="#setChoose" stylesheets="@../Resource/Connect.css" text="Lets start!" />
     </children>
-   <rotationAxis>
-      <Point3D />
-   </rotationAxis>
+    <rotationAxis>
+        <Point3D />
+    </rotationAxis>
 </AnchorPane>

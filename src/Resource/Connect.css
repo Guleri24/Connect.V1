@@ -2,6 +2,10 @@
     -fx-opacity: .5;
 }
 .button{
--fx-background-color: #fc7fb2;
--fx-background-radius: 20
+    -fx-background-color: #fc7fb2;
+    -fx-background-radius: 20
+}
+.About{
+    -fx-background-color: #fc7fb2;
+    -fx-background-radius: 20
 }
