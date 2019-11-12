@@ -6,3 +6,7 @@ Quest
 Tragedy
 Romance
 Blue and many more
+
+![](ConnectMain.png)
+![](ConnectChoose.png)
+![](ConnectView.png)
