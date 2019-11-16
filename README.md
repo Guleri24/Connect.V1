@@ -7,12 +7,12 @@ Tragedy
 Romance
 Blue and many more
 
-
 # Main Scene
-![](ConnectMain.png)
+![](images/layout.V2/ConnectMain.png)
 
 # Overview of Stories included
-![](ConnectChoose.png)
+![](images/layout.V2/Choose.png)
 
 # View Window with the stories choosing button
-![](ConnectView.png)
+![](images/layout.V2/View.png)
+
