@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.web.WebView?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/13.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Connect.V1.Controller">
+   <top>
+       <AnchorPane prefHeight="39.0" prefWidth="800.0" style="-fx-background-color: #1e56a0;"
+                   BorderPane.alignment="CENTER">
+           <MenuButton layoutX="28.0" layoutY="7.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="119.0"
+                       styleClass="button" stylesheets="@/Resource/Connect.css" text="MenuButton">
+               <items>
+                   <MenuItem fx:id="OvercomingTheMonster" mnemonicParsing="false" text="Overcoming the Monster" onAction="#setView"/>
+                   <MenuItem fx:id="Comedy" mnemonicParsing="false" text="Comedy" onAction="#setView"/>
+                   <MenuItem fx:id="RagsToRiches" mnemonicParsing="false" text="Rags to Riches" onAction="#setView"/>
+                   <MenuItem fx:id="Tragedy" mnemonicParsing="false" text="Tragedy" onAction="#setView"/>
+                   <MenuItem fx:id="TheQuest" mnemonicParsing="false" text="The Quest" onAction="#setView"/>
+                   <MenuItem fx:id="Rebirth" mnemonicParsing="false" text="Rebirth" onAction="#setView"/>
+                   <MenuItem fx:id="VoyageAndReturn" mnemonicParsing="false" text="Voyage and Return" onAction="#setView"/>
+                   <MenuItem fx:id="Erotic" mnemonicParsing="false" text="Erotic" onAction="#setView"/>
+               </items>
+           </MenuButton>
+       </AnchorPane>
+   </top>
+   <bottom>
+      <AnchorPane prefHeight="15.0" prefWidth="800.0" style="-fx-background-color: #1e56a0;" BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+      <WebView fx:id="view" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
